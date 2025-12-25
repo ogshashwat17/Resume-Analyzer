@@ -50,13 +50,12 @@ function App() {
       </header>
 
       <div className="main-content">
-        {/* 1. Upload Form - Visual Separation Fix */}
+        
         {!analysis && (
           <div className="upload-wrapper" style={{ width: '100%', maxWidth: '1000px' }}>
 
             <div className="cards-row" style={{ display: 'flex', gap: '2rem', marginBottom: '2rem', flexWrap: 'wrap', justifyContent: 'center' }}>
 
-              {/* Card 1: Job Description */}
               <div className="card" style={{ flex: '1', minWidth: '320px', display: 'flex', flexDirection: 'column' }}>
                 <h3>1. Job Description</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
@@ -78,7 +77,6 @@ function App() {
                 />
               </div>
 
-              {/* Card 2: Upload Resume */}
               <div className="card" style={{ flex: '1', minWidth: '320px', display: 'flex', flexDirection: 'column' }}>
                 <h3>2. Upload Resume</h3>
                 <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1rem' }}>
@@ -133,7 +131,7 @@ function App() {
                 {loading ? (
                   <span><span className="spinner">↻</span> Analyzing...</span>
                 ) : (
-                  "🚀 Analyze Profile"
+                  " Analyze Profile"
                 )}
               </button>
               {error && <p className="error-msg" style={{ marginTop: '1rem', background: 'rgba(239, 68, 68, 0.2)', padding: '0.5rem', borderRadius: '6px' }}>{error}</p>}
@@ -154,7 +152,7 @@ function App() {
               </div>
 
               <div className="option-card hr-card" onClick={() => setActiveView('hr')}>
-                <div className="icon">📝</div>
+                <div className="icon"></div>
                 <h2>HR Review</h2>
                 <p>View Strengths & Weaknesses</p>
               </div>
