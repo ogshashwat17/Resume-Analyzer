@@ -140,7 +140,7 @@ function App() {
           </div>
         )}
 
-        {/* 2. Options Selection - Shown after analysis */}
+        
         {analysis && (
           <div className="options-view fade-in">
             <h2 className="success-msg">Analysis Complete!</h2>
@@ -167,7 +167,7 @@ function App() {
           </div>
         )}
 
-        {/* 3. Modal Overlay - Focused Result View */}
+      
         {activeView && analysis && (
           <div className="modal-overlay" onClick={closeModal}>
             <div className="modal-content" onClick={e => e.stopPropagation()}>
